@@ -1,5 +1,8 @@
 {
   "thenatally/test-bot": {
-    "path": "/home/tally/Documents/GitHub/test-bot/deploy/"
+    "path": "app/test-bot/"
+  },
+  "thenatally/scrubette-v2": {
+    "path": "app/scrubette"
   }
 }
