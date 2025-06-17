@@ -117,11 +117,11 @@ export async function createDiscordStepUpdater(repo: string, tag: string) {
         }
         const done = currentStep >= steps.length;
         if (done) {
-            return `### ${repo} ${tag}\n${
+            return `### ${repo.split("/").at(1)} ${tag}\n${
                 stepBar.join("")
             }\nDone! ${statusLine}`;
         }
-        return `### ${repo} ${tag}\nStep ${
+        return `### ${repo.split("/").at(1)} ${tag}\nStep ${
             currentStep + 1
         } / ${steps.length}\n${stepBar.join("")}\n${padding.join("")}  ^ ${
             steps[currentStep] || ""
