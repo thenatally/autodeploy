@@ -56,6 +56,8 @@ export async function createDiscordStepUpdater(repo: string, tag: string) {
     let currentStep = -1;
     let messageId: string | null = null;
     let payload: any = {
+        username: "Deployments",
+        avatar_url: "https://m.media-amazon.com/images/I/81wY1FqCVlL.jpg",
         flags: 1 << 15,
         components: [
             {
